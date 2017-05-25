@@ -61,6 +61,7 @@
 <script type="text/javascript">
 
 $('.bk_title_content').html(document.title);
+
   var bullets = document.getElementById('position').getElementsByTagName('li');
   Swipe(document.getElementById('mySwipe'), {
     auto: 2000,
@@ -79,7 +80,7 @@ $('.bk_title_content').html(document.title);
     var product_id = "{{$product->id}}";
     $.ajax({
       type: "GET",
-      url: '/service/cart/add/' + product_id,
+      url: '../service/cart/add/' + product_id,
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -110,7 +111,7 @@ $('.bk_title_content').html(document.title);
   }
 
   function _toCart() {
-    location.href = '/cart';
+    location.href = '../cart';
   }
 </script>
 
