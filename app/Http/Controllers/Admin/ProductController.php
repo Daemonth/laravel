@@ -16,10 +16,11 @@ class ProductController extends Controller
   public function toProduct()
   {
     $products = Product::all();
+
     foreach ($products as $product) {
       $product->category = Category::find($product->category_id);
     }
-
+    
     return view('admin.product')->with('products', $products);
   }
 

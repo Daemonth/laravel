@@ -33,7 +33,7 @@
 						<img src="{{$category->preview}}" alt="" style="width: 50px; height: 50px;">
 					@endif</td>
 					<td class="td-manage">
-						<a title="编辑" href="javascript:;" onclick="category_edit('编辑类别','/admin/category_edit?id={{$category->id}}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+						<a title="编辑" href="javascript:;" onclick="category_edit('编辑类别','../admin/category_edit?id={{$category->id}}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
 						<a title="删除" href="javascript:;" onclick='category_del("{{$category->name}}", "{{$category->id}}")' class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
 					</td>
 				</tr>

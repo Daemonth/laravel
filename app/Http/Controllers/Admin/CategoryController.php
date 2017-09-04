@@ -32,6 +32,7 @@ class CategoryController extends Controller
   public function toCategoryEdit(Request $request) {
     $id = $request->input('id', '');
     $category = Category::find($id);
+    
     $categories = Category::whereNull('parent_id')->get();
 
     return view('admin/category_edit')->with('category', $category)

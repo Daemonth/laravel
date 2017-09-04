@@ -18,7 +18,8 @@
       <div class="weui_cell_bd weui_cell_primary">
           <input class="weui_input" type="password" placeholder="不少于6位" name='password'/>
       </div>
-  </div>
+  </div>    
+
   <div class="weui_cell weui_vcode">
       <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
       <div class="weui_cell_bd weui_cell_primary">
@@ -81,6 +82,7 @@
       setTimeout(function() {$('.bk_toptips').hide();}, 2000);
       return;
     }
+    
     // 验证码
     var validate_code = $('input[name=validate_code]').val();
     if(validate_code.length == 0) {

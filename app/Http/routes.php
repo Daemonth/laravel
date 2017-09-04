@@ -15,6 +15,8 @@ use App\Entity\Member;
 Route::get('/', function () {
     return view('login');
 });
+
+
 Route::get('/login', 'View\MemberController@toLogin');
 Route::get('/register', 'View\MemberController@toRegister');
 

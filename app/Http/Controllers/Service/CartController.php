@@ -63,6 +63,8 @@ class CartController extends Controller
     return response($m3_result->toJson())->withCookie('bk_cart', implode(',', $bk_cart_arr));
   }
 
+
+
   public function deleteCart(Request $request)
   {
     $m3_result = new M3Result;
@@ -75,6 +77,8 @@ class CartController extends Controller
       $m3_result->message = '书籍ID为空';
       return $m3_result->toJson();
     }
+
+
     $product_ids_arr = explode(',', $product_ids);
 
     $member = $request->session()->get('member', '');
@@ -84,12 +88,7 @@ class CartController extends Controller
         return $m3_result->toJson();
     }
 
-    $product_ids = $request->input('product_ids', '');
-    if($product_ids == '') {
-      $m3_result->status = 1;
-      $m3_result->message = '书籍ID为空';
-      return $m3_result->toJson();
-    }
+
 
     // 未登录
     $bk_cart = $request->cookie('bk_cart');

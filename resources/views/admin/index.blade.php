@@ -16,8 +16,8 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="/admin/category" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
-					<li><a _href="/admin/product" data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
+					<li><a _href="../admin/category" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
+					<li><a _href="../admin/product" data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -25,7 +25,7 @@
 			<dt><i class="Hui-iconfont">&#xe687;</i> 订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="/admin/order" data-title="订单列表" href="javascript:void(0)">订单列表</a></li>
+					<li><a _href="../admin/order" data-title="订单列表" href="javascript:void(0)">订单列表</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -33,7 +33,7 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="/admin/member" data-title="会员列表" href="javascript:;">会员列表</a></li>
+					<li><a _href="../admin/member" data-title="会员列表" href="javascript:;">会员列表</a></li>
 				</ul>
 			</dd>
 		</dl>
